@@ -1,0 +1,184 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root{
+    display: none;
+}
+
+section{
+    height: 100vh;
+    background-color: goldenrod;
+    font-family: sans-serif;
+}   
+.score{
+    color: rgb(234, 234, 234);
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.score h2{
+    font-size: 30px;
+    
+}
+.score p{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+.intro p{
+  font-size: 25px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+.intro h2{
+    margin-top: 80px;
+    padding: 10px;
+}
+.intro{
+   color:rgb(234, 234, 234) ;
+   height: 75vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   transition: opacity 0.5s ease;
+}
+img{
+   width: 130px;
+   height: 130px;
+  
+}
+.intro h1{
+    font-size: 40px;
+    margin-top: 50px;
+}
+.intro button{
+    width: 140px!important;
+    margin-top: 90px;
+    padding: 10px;
+    
+}
+.intro button, .match button{
+    width: 100px;
+    height: 50px;
+    background: none;
+    border: none;
+    color:rgb(234, 234, 234) ;
+    font-size: 25px;
+    background-color: cadetblue;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.match {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50% );
+    transition: opacity 0.5s ease 0.5s;
+}
+.match h2{
+  margin-bottom: 30px;
+  margin-top: 70px;
+}
+.winner{
+    color:rgb(234, 234, 234) ;
+    text-align: center;
+    font-size: 48px;
+
+}
+.options button {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.hands, .options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+div.fadeOut{
+    opacity: 0;
+    pointer-events: none;
+}
+div.fadeIn{
+    opacity: 1;
+    pointer-events: all;
+}
+body {
+	background-color: #212;
+	height: 100vh;
+	margin: 0;
+	display: grid;
+	place-items: center;   
+}
+
+.loader {
+	color: coral;
+	font-family: monospace;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.loader::before {
+	content: '';
+	animation: loading 0.6s infinite;
+}
+
+@keyframes loading {
+	25% {
+		content: '|';
+	}
+	50% {
+		content: '/';
+	}
+	75% {
+		/* - or — */
+		content: '—';
+	}
+	100% {
+		content: '\\';
+	}
+}
+
+@media only screen and (max-width:767px){
+    .intro h1{
+        width: 100%;
+        font-size: 24px;
+        margin-left: 52px;
+    }
+    .intro{
+        overflow-x: hidden;
+    }
+    .intro h1{
+        text-align: center;
+        margin-right: 40px;
+    }
+    .section{
+        height: 100%;
+        background-color: goldenrod;
+        overflow: hidden;
+    }
+    .options button {
+       overflow-x: hidden;
+       width: 70px !important;
+       font-size: 17px;
+       height: 30px;
+       
+    }
+    .match h2{
+        font-size: 34px;
+    }
+    body{
+        overflow-x: hidden !important;
+    }
+   .loader{
+       display: flex;
+       justify-content: center;
+   }
+
+}

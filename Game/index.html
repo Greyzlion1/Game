@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Rock paper and scissors</title>
+</head>
+<body>
+    <span id="loader" class="loader "></span>
+
+    <div id="root" class="">
+        <section class="game">
+        <div class="score">
+            <div class="player-score">
+                <h2>You</h2>
+                <p>0</p>
+            </div>
+            <div class="computer-score">
+                <h2>Hamid</h2>
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="intro">
+            <h1>Rock Paper and Scissors</h1>
+            <button>Let's Play</button>
+             <h1>About the Game</h1>
+             <p>Rock Paper Scissors is the classic playground game converted into a fun online multiplayer game. Have you ever had a dispute or disagreement where you and a friend cannot decide who is right and who is wrong? If so then you have probably settled it by playing rock paper scissors.
+             The rules remain the same as the original game: Rock beats scissors, Scissors beats paper and paper beats rock!</p>
+         </div>
+        <div class="match fadeOut">
+            <h2 class="winner">Choose one option</h2>
+            <div class="hands">
+                <img class="player-hands" src="./images/rock.png" alt="">
+                <img class="computer-hands" src="./images/rock.png" alt="">
+            </div>
+            <div class="options">
+                <button class="rock">rock</button>
+                <button class="paper">paper</button>
+                <button class="scissors">scissors</button>
+            </div>
+        </div>
+    </section>
+    </div>
+    
+
+</body>
+<script src="main.js"></script>
+</html>    
+       
